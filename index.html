@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameHub - Tu Tienda de Videojuegos</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Iconos Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Archivo CSS propio -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+         <img src="img/logo.png" alt="GameHub Logo" class="logo-img me-2">
+         <span></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#hero" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#features" class="nav-link">Características</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link">Galería</a></li>
+            <li class="nav-item"><a href="#pricing" class="nav-link">Precios</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <h1>Descarga Juegos Épicos en un Solo Lugar</h1>
+      <p class="lead">La app más completa para comprar, gestionar y jugar tus videojuegos favoritos</p>
+      <a href="#pricing" class="btn btn-primary btn-lg"><i class="bi bi-download"></i> Descargar App</a>
+    </div>
+  </section>
+
+  <!-- Características -->
+  <section id="features" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Características Destacadas</h2>
+      <div class="row g-4">
+        <article class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-controller display-4 text-primary"></i>
+              <h5 class="card-title mt-3">Catálogo Extenso</h5>
+              <p class="card-text">Miles de títulos de acción, deportes, aventura y más.</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-cloud-arrow-down display-4 text-success"></i>
+              <h5 class="card-title mt-3">Descargas Rápidas</h5>
+              <p class="card-text">Instala tus juegos en segundos con servidores optimizados.</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-people display-4 text-warning"></i>
+              <h5 class="card-title mt-3">Comunidad Activa</h5>
+              <p class="card-text">Conéctate con jugadores de todo el mundo y comparte experiencias.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Galería de Juegos</h2>
+      <div class="row g-3 gallery">
+        <div class="col-md-4"><img src="img/swich_1.JPG" class="img-fluid rounded shadow"></div>
+        <div class="col-md-4"><img src="img/swich_2.JPG" class="img-fluid rounded shadow"></div>
+        <div class="col-md-4"><img src="img/swich_3.JPG" class="img-fluid rounded shadow"></div>
+        <div class="col-md-4"><img src="img/play_2.JPG" class="img-fluid rounded shadow"></div>
+        <div class="col-md-4"><img src="img/play_1.JPG" class="img-fluid rounded shadow"></div>
+        <div class="col-md-4"><img src="img/play_3.JPG" class="img-fluid rounded shadow"></div>
+        <div class="col-md-4"><img src="img/xbox_1.JPG" class="img-fluid rounded shadow"></div>
+        <div class="col-md-4"><img src="img/xbox_2.JPG" class="img-fluid rounded shadow"></div>
+        <div class="col-md-4"><img src="img/xbox_3.JPG" class="img-fluid rounded shadow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabla de Precios -->
+  <section id="pricing" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Planes y Precios</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Plan</th>
+              <th>Incluye</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Básico</td>
+              <td>
+                <ul>
+                  <li>Acceso a juegos gratis</li>
+                  <li>1 dispositivo</li>
+                  <li>Soporte estándar</li>
+                </ul>
+              </td>
+              <td>$4.99/mes</td>
+            </tr>
+            <tr>
+              <td>Pro</td>
+              <td>
+                <ul>
+                  <li>Acceso a 500+ juegos</li>
+                  <li>Hasta 3 dispositivos</li>
+                  <li>Ofertas exclusivas</li>
+                </ul>
+              </td>
+              <td>$9.99/mes</td>
+            </tr>
+            <tr>
+              <td>Premium</td>
+              <td>
+                <ul>
+                  <li>Acceso ilimitado</li>
+                  <li>Multidispositivo</li>
+                  <li>Soporte VIP 24/7</li>
+                </ul>
+              </td>
+              <td>$14.99/mes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" id="name" class="form-control" placeholder="Tu nombre">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Correo</label>
+          <input type="email" id="email" class="form-control" placeholder="Tu correo">
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea id="message" class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 GameHub. Todos los derechos reservados.</p>
+    <div>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Iconos flotantes redes sociales -->
+<div class="social-float">
+  <a href="#"><i class="bi bi-facebook"></i></a>
+  <a href="#"><i class="bi bi-twitter"></i></a>
+  <a href="#"><i class="bi bi-instagram"></i></a>
+  <a href="#"><i class="bi bi-youtube"></i></a>
+</div>
+
+</body>
+</html>
+

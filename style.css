@@ -1,0 +1,81 @@
+/* Hero */
+#hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url("img/fondo_inicio.JPG") center/cover no-repeat;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#hero h1 {
+  font-size: 3.5rem;
+  animation: fadeInDown 1.5s ease;
+}
+#hero .btn {
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+#hero .btn:hover {
+  transform: scale(1.1);
+}
+
+/* Animación */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Galería */
+.gallery img {
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 20px 0;
+}
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #0d6efd;
+}
+/* ========= ICONOS FLOTANTES ========= */
+.social-float {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.social-float a {
+  background: #0d6efd;
+  color: white;
+  font-size: 1.5rem;
+  padding: 12px;
+  border-radius: 8px 0 0 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.social-float a:hover {
+  background: #0b5ed7;
+  transform: translateX(-5px);
+}
+.logo-img {
+  height: 80px;   /* Ajusta el tamaño según tu diseño */
+  width: auto;
+}
+
